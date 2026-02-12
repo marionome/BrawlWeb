@@ -1,0 +1,32 @@
+.conteudo{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		
+	}
+	
+	
+.info{
+		opacity:0;
+		transition: opacity 0.3s ease;
+
+	}
+	
+.perfil:hover + .info{
+		opacity:1;
+		
+	}
+	
+.info-style{
+		color: white;
+		background-color:black;
+		
+	}
+	
+.brawler img{
+		border: 10px solid yellow;
+		border-radius: 10%;
+		height: 250px ;
+		width: 350px;
+		background-color: darkslateblue;
+}

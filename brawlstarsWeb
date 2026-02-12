@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="background_style.css">
+<link rel="stylesheet" href="brawler_style.css">  
+<link type="image/png" sizes="16x16" rel="icon" href="icon_head/icon_head.png"> 
+
+<title>Pagina Teste</title>
+</head>
+
+<body id="pagina">
+<label>
+<select id="changebg">
+<option value="base">Base</option>
+<option value="tarabazar">Bazar da Tara</option>
+<option value="cyberweek">Cyberweek</option>
+<option value="supercity">Super City</option>
+</select>
+</label>
+
+<div class="bg" id="bg"></div><!--background-->
+<h1>Brawlers</h1>
+<button type="button" id="botao" onclick="clique">Clique aqui para ver os brawlers</button>
+
+<div class="brawler">
+<h3>Brawler-El Primo</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/elprimo_perfil.png" alt="El Primo">
+<div class="info">
+<span class="info-style">Classe: Tanque, Vida:13,000, Dano:760x3(2,280)</span>
+</div>
+</div>
+</div> <br>
+
+<div class="brawler">
+<h3>Brawler-Sandy</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/sandy_perfil.png">
+<div class="info">
+<span class="info-style">Classe: Suporte, Vida:8,200 , Dano:1,800</span>
+</div>
+</div>
+</div> <br>
+
+<div class="brawler">
+<h3>Brawler-Poco</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/poco_perfil.png">
+<div class="info">
+<span class="info-style">Classe: Suporte, Vida:8,000 , Dano:1,520</span>
+</div>
+</div>
+</div> <br>
+
+<div class="brawler">
+<h3>Brawler-Gale</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/gale_perfil.png">
+<div class="info">
+<span class="info-style">Classe: Suporte, Vida:8,000, Dano:600x6(3600)</span>
+</div>
+</div>
+</div> <br>
+
+<div class="brawler">
+<h3>Brawler-Alli</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/alli_perfil.png">
+<div class="info">
+<span class="info-style">Classe: Assassino, Vida:7,800, Dano:2,600</span>
+</div>
+</div>
+</div> <br>
+
+<div class="brawler">
+<h3>Brawler-Gigi</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/gigi_perfil.png">
+<div class="info">
+<span class="info-style">Classe: Assassino, Vida:8,200, Dano:1,200</span>
+</div>
+</div>
+</div> <br>
+
+<script src="backgroundImage.js"></script>
+<script src="infobrawler.js"></script>
+<script src="onclick.js"></script>
+</body>
+</html>
