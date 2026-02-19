@@ -8,19 +8,24 @@
 body{
 	font-family: Nougat;
 	font-variant:normal;
+	color: white;
 	margin: 10px;
-	text-shadow: -1px -1px 0 #ffffff,
-				 1px -1px 0 #ffffff,
-				 -1px 1px 0 #ffffff,
-				 1px 1px 0 #ffffff,
-				 -2px 0px 0 #ffffff,
-				 2px 0px 0 #ffffff,
-				 0px -2px 0 #ffffff,
-				 0px 2px 0 #ffffff;
+	text-shadow: -2px -2px 0 #000,
+				 2px -2px 0 #000,
+				 -2px 2px 0 #000,
+				 2px 2px 0 #000,
+				 -1px 0px 0 #000,
+				 1px 0px 0 #000,
+				 0px -1px 0 #000,
+				 0px 1px 0 #000;
 }
 
 	
 .b_show{
+		display: block;
+}
+
+.b_show.ativo{
 		display: none;
 }
 
