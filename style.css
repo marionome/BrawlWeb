@@ -1,15 +1,37 @@
-		
+@font-face{
+	font-family: Nougat;
+	src: url(nougat/Nougat-ExtraBlack.ttf)
+	
+}
+
+
+body{
+	font-family: Nougat;
+	font-variant:normal;
+	margin: 10px;
+	text-shadow: -1px -1px 0 #ffffff,
+				 1px -1px 0 #ffffff,
+				 -1px 1px 0 #ffffff,
+				 1px 1px 0 #ffffff,
+				 -2px 0px 0 #ffffff,
+				 2px 0px 0 #ffffff,
+				 0px -2px 0 #ffffff,
+				 0px 2px 0 #ffffff;
+}
+
+	
 .b_show{
 		display: none;
 }
 
-button{
+#botao{
 		background-image: url("decor_css/button_img.jpg");
 		background-size: cover;
 		width:90px;
 		height:60px;
 		
 	}
+
 
 
 label{
@@ -19,6 +41,14 @@ label{
 	
 }
 
-h1{	color:yellow}
+h1{	color:yellow;
+	text-shadow: -2px -2px 0 #000,
+				 2px -2px 0 #000,
+				 -2px 2px 0 #000,
+				 2px 2px 0 #000,
+				 -3px 0px 0 #000,
+				 3px 0px 0 #000,
+				 0px -3px 0 #000,
+				 0px 3px 0 #000;}
 
 

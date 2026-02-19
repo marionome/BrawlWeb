@@ -7,6 +7,7 @@
 	
 	
 .info{
+		
 		opacity:0;
 		transition: opacity 0.3s ease;
 
@@ -18,15 +19,29 @@
 	}
 	
 .info-style{
-		color: white;
+
+		color: #000;
 		background-color:black;
 		
 	}
-	
+
+
 .brawler img{
 		border: 10px solid yellow;
 		border-radius: 10%;
 		height: 250px ;
 		width: 350px;
 		background-color: darkslateblue;
+}
+
+.icon_b img{
+
+		border: 3px solid yellow;
+		border-radius: 10%;
+		height: 83px ;
+		width: 116px;
+		background-color: #661313;
+}
+ .brawler h3{
+	font-size: 40px;
 }
