@@ -25,6 +25,12 @@
 		
 	}
 
+.brawler{
+	display: block;
+}
+.brawler.hide{
+	display:none;
+}
 
 .brawler img{
 		border: 10px solid yellow;

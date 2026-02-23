@@ -26,9 +26,14 @@ Tema:
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
 
-<button type="button" class="icon_b" id="icon" onclick="iconshow"><img src="perfil/elprimo_perfil.png"></button><!--"EM PROGRESSO" botão para mostrar informação individual dos brawlers-->
+<button type="button" class="icon_b" value="primo" onclick="showinfo(this.value)"><img src="perfil/elprimo_perfil.png"></button><!--botão para mostrar informação individual dos brawlers-->
+<button type="button" class="icon_b" value="sandy" onclick="showinfo(this.value)"><img src="perfil/sandy_perfil.png"></button>
+<button type="button" class="icon_b" value="poco" onclick="showinfo(this.value)"><img src="perfil/poco_perfil.png"></button>
+<button type="button" class="icon_b" value="gale" onclick="showinfo(this.value)"><img src="perfil/gale_perfil.png"></button>
+<button type="button" class="icon_b" value="alli" onclick="showinfo(this.value)"><img src="perfil/alli_perfil.png"></button>
+<button type="button" class="icon_b" value="gigi" onclick="showinfo(this.value)"><img src="perfil/gigi_perfil.png"></button>
 
-<div  class="brawler" id="primo">
+<div  class="brawler hide" id="primo">
 <h3>BRAWLER-EL PRIMO</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/elprimo_perfil.png" alt="El Primo">
@@ -38,7 +43,7 @@ Tema:
 </div>
 </div> <br>
 
-<div class="brawler" id="sandy">
+<div class="brawler hide" id="sandy">
 <h3>BRAWLER-SANDY</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/sandy_perfil.png">
@@ -48,7 +53,7 @@ Tema:
 </div>
 </div> <br>
 
-<div class="brawler" id="poco">
+<div class="brawler hide" id="poco">
 <h3>BRAWLER-POCO</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/poco_perfil.png">
@@ -58,7 +63,7 @@ Tema:
 </div>
 </div> <br>
 
-<div class="brawler" id="gale">
+<div class="brawler hide" id="gale">
 <h3>BRAWLER-GALE</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/gale_perfil.png">
@@ -68,7 +73,7 @@ Tema:
 </div>
 </div> <br>
 
-<div class="brawler" id="alli">
+<div class="brawler hide" id="alli">
 <h3>BRAWLER-ALLI</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/alli_perfil.png">
@@ -78,7 +83,7 @@ Tema:
 </div>
 </div> <br>
 
-<div class="brawler" id="gigi">
+<div class="brawler hide" id="gigi">
 <h3>BRAWLER-GIGI</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/gigi_perfil.png">
