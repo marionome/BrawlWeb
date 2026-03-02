@@ -58,6 +58,9 @@
 .icon_b:hover{
 	transform: scale(1.1,1.1);
 }
+.icon_b:active{
+	transform: scale(1,1);
+}
 
 .icon_b img{
 
