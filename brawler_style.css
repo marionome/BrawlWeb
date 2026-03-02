@@ -34,9 +34,10 @@
 
 .brawler img{
 		border: 7px solid black;
-		border-radius: 10%;
+		border-radius: 5%;
 		height: 250px ;
 		width: 350px;
+		box-shadow: 0px 0px 0px 2px white;
 }
 
 /*raridades*/
@@ -69,6 +70,7 @@
 		height: 83px ;
 		width: 116px;
 		background-color: #661313;
+		
 }
  .brawler h3{
 	font-size: 40px;
