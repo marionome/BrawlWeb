@@ -48,6 +48,7 @@
 .legendary img{background-color:#faff24;}
 .ultralegendary img{background-color:#800c56;}
 
+
 .icon_b{
 	padding:0;
 	background:none;
@@ -65,7 +66,7 @@
 
 .icon_b img{
 
-		border: 3px solid yellow;
+		border: 3px solid black;
 		border-radius: 10%;
 		height: 83px ;
 		width: 116px;

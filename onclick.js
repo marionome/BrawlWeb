@@ -7,9 +7,16 @@ console.log("entrou no clique");
  }
 
 function showinfo(id){
-	console.log("clicou no icone");
-	console.log(id);
-	const br = document.getElementById(id);
-	br.classList.toggle("hide")
-	
+    const br = document.getElementById(id);
+    const resto = document.querySelectorAll(".brawler");
+    const visivel = !br.classList.contains("hide");
+
+    resto.forEach(function(b) {
+        b.classList.add("hide");
+    });
+
+    if (!visivel){
+        br.classList.remove("hide");
+    }
 }
+
