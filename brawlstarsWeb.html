@@ -9,7 +9,7 @@
 </head>
 
 <body id="pagina">
-<label>
+<label class="background_button">
 Tema:
 <select id="changebg">
 <option value="base">Base</option>
@@ -23,9 +23,10 @@ Tema:
 <h1>Brawlers</h1>
 <button type="button" id="botao" onclick="showhide()">Clique aqui para ver os brawlers</button>
 
+
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
-
+<br>
 <button type="button" class="icon_b" value="primo" onclick="showinfo(this.value)"><img src="perfil/elprimo_perfil.png"></button><!--botão para mostrar informação individual dos brawlers-->
 <button type="button" class="icon_b" value="poco" onclick="showinfo(this.value)"><img src="perfil/poco_perfil.png"></button>
 <button type="button" class="icon_b" value="8bit" onclick="showinfo(this.value)"><img src="perfil/8bit_perfil.png"></button>
@@ -35,6 +36,7 @@ Tema:
 <button type="button" class="icon_b" value="clancy" onclick="showinfo(this.value)"><img src="perfil/clancy_perfil.png"></button>
 <button type="button" class="icon_b" value="alli" onclick="showinfo(this.value)"><img src="perfil/alli_perfil.png"></button>
 <button type="button" class="icon_b" value="gigi" onclick="showinfo(this.value)"><img src="perfil/gigi_perfil.png"></button>
+<button type="button" class="icon_b" value="corvo" onclick="showinfo(this.value)"><img src="perfil/corvo_perfil.png"></button>
 <button type="button" class="icon_b" value="sandy" onclick="showinfo(this.value)"><img src="perfil/sandy_perfil.png"></button>
 <button type="button" class="icon_b" value="sirius" onclick="showinfo(this.value)"><img src="perfil/sirius_perfil.png"></button>
 
@@ -138,6 +140,17 @@ Tema:
 </div>
 </div> 
 
+<div class="brawler hide legendary" id="corvo">
+<h3>BRAWLER-CORVO</h3>
+<div class="conteudo">
+<img class="perfil" src="perfil/corvo_perfil.png">
+<button class="change" type="button" value="corvo" onclick="change(this.value)"><img src="decor_css/corvo_change.png"></button>
+<div class="info">
+<span class="info-style">Classe: Assassino, Vida:6,000 , Dano:640x3(1920)</span>
+</div>
+</div>
+</div>
+
 <div class="brawler hide legendary" id="sandy">
 <h3>BRAWLER-SANDY</h3>
 <div class="conteudo">
@@ -148,10 +161,11 @@ Tema:
 </div>
 </div>
 
-<div  class="brawler hide change ultralegendary" id="sirius">
+<div  class="brawler hide ultralegendary" id="sirius">
 <h3>BRAWLER-SIRIUS</h3>
 <div class="conteudo">
 <img class="perfil" src="perfil/sirius_perfil.png" alt="Sirius">
+<button class="change" type="button" value="sirius" onclick="change(this.value)"><img src="decor_css/sirius_change.png"></button>
 <div class="info">
 <span class="info-style">Classe: Controle, Vida:7,400, Dano:1200x2(2,400)</span>
 </div>
@@ -163,5 +177,6 @@ Tema:
 <script src="backgroundImage.js"></script>
 <script src="infobrawler.js"></script>
 <script src="onclick.js"></script>
+<script src="change_perfil.js"></script>
 </body>
 </html>

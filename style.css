@@ -31,8 +31,9 @@ body{
 
 
 #botao{
-		background-image: url("decor_css/button_img.jpg");
+		background-color: yellow;
 		background-size: cover;
+		box-shadow: 0px 0px 0px 2px white;
 		width:90px;
 		height:60px;
 		
@@ -40,7 +41,7 @@ body{
 
 
 
-label{
+.background_button{
 	position: absolute;
 	top:0px;
 	right:0px;
