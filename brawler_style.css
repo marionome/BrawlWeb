@@ -1,21 +1,15 @@
 .conteudo{
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 10px;
-		
 	}
 	
 	
 .info{
 		
-		opacity:0;
-		transition: opacity 0.3s ease;
-
-	}
-	
-.perfil:hover + .info{
 		opacity:1;
-		
+
+
 	}
 	
 .info-style{
