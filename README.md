@@ -20,3 +20,10 @@ Funções:
 	<li>⏳ Sistema de filtros</li>
 	<li>⏳ Cadastro de novos brawlers</li>
 </ul>
+
+Ideias para uma versão futura(v2):
+<ul>
+	<li>Novas adições ao filtro(ambientes,vida,dano)</li>
+	<li>Multiplas linguas(PT-BR,EN,ES)</li>
+
+</ul>

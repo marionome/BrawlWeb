@@ -5,13 +5,16 @@ nome_brawler varchar(30) NOT NULL UNIQUE,
 classe varchar(20) NOT NULL,
 vida VARCHAR(50) NOT NULL,
 dano varchar(50) NOT NULL,
-descricao text
+descricao text,
+ordem_raridade int not null,
+dt_lancamento date not null
 );
 create table if not exists perfil(
 id_perfil int auto_increment primary key,
-id_brawler int,
+id_brawler int not null,
 perfil_dir varchar(255) not null,
-foreign key (id_brawler) references brawler(id_brawler)
+foreign key (id_brawler) references brawler(id_brawler),
+ordem_perfil int not null
 );
 create table if not exists trio(
 id_trio int auto_increment primary key,
