@@ -1,10 +1,15 @@
 import mysql.connector
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 def main():
     conexao = mysql.connector.connect(
-        host="127.0.0.1",
-        user="root",
-        password="sans009Mnp",
-        database="brawlweb"
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME")
     )
     brawler = input("Insira o nome do brawler que vc deseja ver:\n")
     busca = conexao.cursor()
