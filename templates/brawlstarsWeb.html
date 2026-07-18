@@ -1,9 +1,9 @@
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css"> 
-<link rel="stylesheet" href="css/background_style.css">
-<link rel="stylesheet" href="css/brawler_style.css">  
-<link type="image/png" sizes="16x16" rel="icon" href="icon_head/icon_head.png"> 
+<link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}"> 
+<link rel="stylesheet" href="{{url_for("static",filename="css/background_style.css")}}">
+<link rel="stylesheet" href="{{url_for("static",filename="css/brawler_style.css")}}">  
+<link type="image/png" sizes="16x16" rel="icon" href="{{url_for("static",filename="icon_head/icon_head.png")}}"> 
 
 <title>BrawlWeb</title>
 </head>
@@ -29,23 +29,23 @@ Tema:
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
 <br>
-<button type="button" class="icon_b" value="primo" onclick="showinfo(this.value)"><img src="perfil/elprimo_perfil.png"></button><!--botão para mostrar informação individual dos brawlers-->
-<button type="button" class="icon_b" value="poco" onclick="showinfo(this.value)"><img src="perfil/poco_perfil.png"></button>
-<button type="button" class="icon_b" value="8bit" onclick="showinfo(this.value)"><img src="perfil/8bit_perfil.png"></button>
-<button type="button" class="icon_b" value="rico" onclick="showinfo(this.value)"><img src="perfil/rico_perfil.png"></button>
-<button type="button" class="icon_b" value="gale" onclick="showinfo(this.value)"><img src="perfil/gale_perfil.png"></button>
-<button type="button" class="icon_b" value="mandy" onclick="showinfo(this.value)"><img src="perfil/mandy_perfil.png"></button>
-<button type="button" class="icon_b" value="clancy" onclick="showinfo(this.value)"><img src="perfil/clancy_perfil.png"></button>
-<button type="button" class="icon_b" value="alli" onclick="showinfo(this.value)"><img src="perfil/alli_perfil.png"></button>
-<button type="button" class="icon_b" value="gigi" onclick="showinfo(this.value)"><img src="perfil/gigi_perfil.png"></button>
-<button type="button" class="icon_b" value="corvo" onclick="showinfo(this.value)"><img src="perfil/corvo_perfil.png"></button>
-<button type="button" class="icon_b" value="sandy" onclick="showinfo(this.value)"><img src="perfil/sandy_perfil.png"></button>
-<button type="button" class="icon_b" value="sirius" onclick="showinfo(this.value)"><img src="perfil/sirius_perfil.png"></button>
+<button type="button" class="icon_b" value="primo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
+<button type="button" class="icon_b" value="poco" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="8bit" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/8bit_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="rico" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/rico_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="gale" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gale_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="mandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/mandy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="clancy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/clancy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="alli" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/alli_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="gigi" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gigi_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="corvo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/corvo_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="sandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sandy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="sirius" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sirius_perfil.png")}}"></button>
 
 <div  class="brawler hide rare" id="primo">
 <h3>BRAWLER-EL PRIMO</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/elprimo_perfil.png" alt="El Primo">
+<img class="perfil" src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}" alt="El Primo">
 <div class="info">
 <span class="info-style">Classe: Tanque, Vida:13,000, Dano:760x3(2,280)</span>
 </div>
@@ -55,7 +55,7 @@ Tema:
 <div class="brawler hide rare" id="poco">
 <h3>BRAWLER-POCO</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/poco_perfil.png">
+<img class="perfil" src="{{url_for("static",filename="perfil/poco_perfil.png")}}">
 <div class="info">
 <span class="info-style">Classe: Suporte, Vida:8,000 , Dano:1,520</span>
 </div>
@@ -65,7 +65,7 @@ Tema:
 <div  class="brawler hide superrare" id="8bit">
 <h3>BRAWLER-8-BIT</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/8bit_perfil.png" alt="8 bit">
+<img class="perfil" src="{{url_for("static",filename="perfil/8bit_perfil.png")}}" alt="8 bit">
 <div class="info">
 <span class="info-style">Classe: Destruidor, Vida:10,400, Dano:680x6(4,080)</span>
 </div>
@@ -75,7 +75,7 @@ Tema:
 <div  class="brawler hide superrare" id="rico">
 <h3>BRAWLER-RICO</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/rico_perfil.png" alt="Rico">
+<img class="perfil" src="{{url_for("static",filename="perfil/rico_perfil.png")}}" alt="Rico">
 <div class="info">
 <span class="info-style">Classe: Destruidor, Vida:6,000, Dano:640x5(3,200)</span>
 </div>
@@ -85,7 +85,7 @@ Tema:
 <div  class="brawler hide epic" id="bo">
 <h3>BRAWLER-BO</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/bo_perfil.png" alt="Bo">
+<img class="perfil" src="{{url_for("static",filename="perfil/bo_perfil.png")}}" alt="Bo">
 <div class="info">
 <span class="info-style">Classe: Controle, Vida:7,600, Dano:1280x3(3,840)</span>
 </div>
@@ -95,7 +95,7 @@ Tema:
 <div class="brawler hide epic" id="gale">
 <h3>BRAWLER-GALE</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/gale_perfil.png">
+<img class="perfil" src="{{url_for("static",filename="perfil/gale_perfil.png")}}">
 <div class="info">
 <span class="info-style">Classe: Suporte, Vida:8,000, Dano:600x6(3600)</span>
 </div>
@@ -105,7 +105,7 @@ Tema:
 <div  class="brawler hide epic" id="mandy">
 <h3>BRAWLER-MANDY</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/mandy_perfil.png" alt="Mandy">
+<img class="perfil" src="{{url_for("static",filename="perfil/mandy_perfil.png")}}" alt="Mandy">
 <div class="info">
 <span class="info-style">Classe: Tiro Preciso, Vida:6,000, Dano:2,600</span>
 </div>
@@ -115,7 +115,7 @@ Tema:
 <div  class="brawler hide mystic" id="clancy">
 <h3>BRAWLER-CLANCY</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/clancy_perfil.png" alt="Clancy">
+<img class="perfil" src="{{url_for("static",filename="perfil/clancy_perfil.png")}}" alt="Clancy">
 <div class="info">
 <span class="info-style">Classe: Destruidor, Vida:7,000, Dano: N1:1,400, N2:1,500x2(3000), N3:1,600x4(6,400)</span>
 </div>
@@ -125,7 +125,7 @@ Tema:
 <div class="brawler hide mystic" id="alli">
 <h3>BRAWLER-ALLI</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/alli_perfil.png">
+<img class="perfil" src="{{url_for("static",filename="perfil/alli_perfil.png")}}">
 <div class="info">
 <span class="info-style">Classe: Assassino, Vida:7,800, Dano:2,600</span>
 </div>
@@ -135,7 +135,7 @@ Tema:
 <div class="brawler hide mystic" id="gigi">
 <h3>BRAWLER-GIGI</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/gigi_perfil.png">
+<img class="perfil" src="{{url_for("static",filename="perfil/gigi_perfil.png")}}">
 <div class="info">
 <span class="info-style">Classe: Assassino, Vida:8,200, Dano:1,200</span>
 </div>
@@ -145,8 +145,8 @@ Tema:
 <div class="brawler hide legendary" id="corvo">
 <h3>BRAWLER-CORVO</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/corvo_perfil.png">
-<button class="change" type="button" value="corvo" onclick="change(this.value)"><img src="decor_css/corvo_change.png"></button>
+<img class="perfil" src="{{url_for("static",filename="perfil/corvo_perfil.png")}}">
+<button class="change" type="button" value="corvo" onclick="change(this.value)"><img src="{{url_for("static",filename="decor_css/corvo_change.png")}}"></button>
 <div class="info">
 <span class="info-style">Classe: Assassino, Vida:6,000 , Dano:640x3(1920)</span>
 </div>
@@ -156,7 +156,7 @@ Tema:
 <div class="brawler hide legendary" id="sandy">
 <h3>BRAWLER-SANDY</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/sandy_perfil.png">
+<img class="perfil" src="{{url_for("static",filename="perfil/sandy_perfil.png")}}">
 <div class="info">
 <span class="info-style">Classe: Suporte, Vida:8,200 , Dano:1,800</span>
 </div>
@@ -166,8 +166,8 @@ Tema:
 <div  class="brawler hide ultralegendary" id="sirius">
 <h3>BRAWLER-SIRIUS</h3>
 <div class="conteudo">
-<img class="perfil" src="perfil/sirius_perfil.png" alt="Sirius">
-<button class="change" type="button" value="sirius" onclick="change(this.value)"><img src="decor_css/sirius_change.png"></button>
+<img class="perfil" src="{{url_for("static",filename="perfil/sirius_perfil.png")}}" alt="Sirius">
+<button class="change" type="button" value="sirius" onclick="change(this.value)"><img src="{{url_for("static",filename="decor_css/sirius_change.png")}}"></button>
 <div class="info">
 <span class="info-style">Classe: Controle, Vida:7,400, Dano:1200x2(2,400)</span>
 </div>
@@ -176,10 +176,10 @@ Tema:
 
 </div><!--icon_select-->
 </div><!--b_show-->
-<script src="javascript/backgroundImage.js"></script>
-<!--<script src="javascript/infobrawler.js"></script>-->
-<script src="javascript/onclick.js"></script>
-<script src="javascript/change_perfil.js"></script>
-<script src="javascript/busca_brawler.js"></script>
+<script src="{{url_for("static",filename="javascript/backgroundImage.js")}}"></script>
+<!--<script src="{{url_for("static",filename="javascript/infobrawler.js")}}></script>-->
+<script src="{{url_for("static",filename="javascript/onclick.js")}}"></script>
+<script src="{{url_for("static",filename="javascript/change_perfil.js")}}"></script>
+<script src="{{url_for("static",filename="javascript/busca_brawler.js")}}"></script>
 </body>
 </html>

@@ -1,10 +1,12 @@
-from flask import Flask , jsonify
+from flask import Flask , jsonify, Blueprint
 import mysql.connector
 from dotenv import load_dotenv
 import os
 
-app = Flask(__name__)
-@app.route("/brawler/<brawl_name>")
+load_dotenv()
+
+brawl_bs = Blueprint("busca",__name__)
+@brawl_bs.route("/<brawl_name>")
 def ret_brawl(brawl_name):
     return busca_brawler(brawl_name)
     

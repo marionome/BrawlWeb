@@ -4,8 +4,8 @@ function change(id){
 	const name = id
 //	console.log(img)
 //	console.log(("perfil/"+name+"2_perfil.png"))
-	if (img.src.includes("perfil/"+name+"_perfil.png" )){
-		img.src = ("perfil/"+name+"2_perfil.png" )
+	if (img.src.includes("static/perfil/"+name+"_perfil.png" )){
+		img.src = ("static/perfil/"+name+"2_perfil.png" )
 	}else
-	{ img.src=("perfil/"+name+"_perfil.png")}
+	{ img.src=("static/perfil/"+name+"_perfil.png")}
 }
