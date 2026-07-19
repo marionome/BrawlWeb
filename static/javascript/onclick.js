@@ -7,16 +7,45 @@ console.log("entrou no clique");
  }
 
 function showinfo(id){
-    const br = document.getElementById(id);
-    const resto = document.querySelectorAll(".brawler");
-    const visivel = !br.classList.contains("hide");
+    console.log(id)
+    const painel = document.getElementById("infobrawler");
+    visivel = false
+    brawlerAtual = null
+    if(!visivel){
+        painel.classList.remove("hide");
+        console.log(id)
+        buscar(id);
 
-    resto.forEach(function(b) {
-        b.classList.add("hide");
-    });
+        visivel = true;
+        brawlerAtual = id;
+        return;
+    }
 
-    if (!visivel){
-        br.classList.remove("hide");
+    if(brawlerAtual == id){
+        painel.classList.add("hide");
+
+        visivel = false;
+        brawlerAtual = null;
+    }
+    else{
+        buscar(id);
+        brawlerAtual = id;
     }
 }
 
+function buscar(nome){
+    console.log(nome);
+    console.log(`http://127.0.0.1:5000/brawler/${nome}`);
+    fetch(`http://127.0.0.1:5000/brawler/${nome}`, {method:"GET"})
+    .then(brawldata => brawldata.json())
+    .then(brawldata => {
+        console.log("entrou")
+        document.getElementById("brawl_nome").innerHTML = brawldata.nome_brawler;
+        document.getElementById("classe").innerHTML = brawldata.classe;
+        document.getElementById("vida").innerHTML = brawldata.vida;
+        document.getElementById("dano").innerHTML = brawldata.dano;
+        document.getElementById("descricao").innerHTML = brawldata.descricao;
+        }
+    )
+    
+}

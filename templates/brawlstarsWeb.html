@@ -29,8 +29,8 @@ Tema:
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
 <br>
-<button type="button" class="icon_b" value="El Primo" onclick="showinfo(this.value)" onclick="buscar(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
-<button type="button" class="icon_b" value="Poco" onclick="showinfo(this.value)" onclick="buscar(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="El Primo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
+<button type="button" class="icon_b" value="Poco" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="8-BIT" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/8bit_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Rico" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/rico_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Gale" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gale_perfil.png")}}"></button>
@@ -42,17 +42,8 @@ Tema:
 <button type="button" class="icon_b" value="Sandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sandy_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Sirius" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sirius_perfil.png")}}"></button>
 
-<div  class="brawler hide rare" id="El Primo">
-<h3>BRAWLER-EL PRIMO</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}" alt="El Primo">
-<div class="info">
-<span class="info-style">Classe: Tanque, Vida:13,000, Dano:760x3(2,280)</span>
-</div>
-</div>
-</div> 
 
-<div class="brawler hide rare" id="Poco">
+<div class=" brawler hide rare" id="infobrawler">
 <h3>Brawler-<span id="brawl_nome"></span></h3>
 <div class="conteudo">
 <img class="perfil" src="{{url_for("static",filename="perfil/poco_perfil.png")}}">
@@ -67,86 +58,6 @@ Tema:
 </div>
 </div>
 
-<div  class="brawler hide superrare" id="8bit">
-<h3>BRAWLER-8-BIT</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/8bit_perfil.png")}}" alt="8 bit">
-<div class="info">
-<span class="info-style">Classe: Destruidor, Vida:10,400, Dano:680x6(4,080)</span>
-</div>
-</div>
-</div>
-
-<div  class="brawler hide superrare" id="rico">
-<h3>BRAWLER-RICO</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/rico_perfil.png")}}" alt="Rico">
-<div class="info">
-<span class="info-style">Classe: Destruidor, Vida:6,000, Dano:640x5(3,200)</span>
-</div>
-</div>
-</div>
-
-<div  class="brawler hide epic" id="bo">
-<h3>BRAWLER-BO</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/bo_perfil.png")}}" alt="Bo">
-<div class="info">
-<span class="info-style">Classe: Controle, Vida:7,600, Dano:1280x3(3,840)</span>
-</div>
-</div>
-</div>
-
-<div class="brawler hide epic" id="Gale">
-<h3>BRAWLER-GALE</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/gale_perfil.png")}}">
-<div class="info">
-<span class="info-style">Classe: Suporte, Vida:8,000, Dano:600x6(3600)</span>
-</div>
-</div>
-</div>
-
-<div  class="brawler hide epic" id="mandy">
-<h3>BRAWLER-MANDY</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/mandy_perfil.png")}}" alt="Mandy">
-<div class="info">
-<span class="info-style">Classe: Tiro Preciso, Vida:6,000, Dano:2,600</span>
-</div>
-</div>
-</div>
-
-<div  class="brawler hide mystic" id="clancy">
-<h3>BRAWLER-CLANCY</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/clancy_perfil.png")}}" alt="Clancy">
-<div class="info">
-<span class="info-style">Classe: Destruidor, Vida:7,000, Dano: N1:1,400, N2:1,500x2(3000), N3:1,600x4(6,400)</span>
-</div>
-</div>
-</div> 
-
-<div class="brawler hide mystic" id="alli">
-<h3>BRAWLER-ALLI</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/alli_perfil.png")}}">
-<div class="info">
-<span class="info-style">Classe: Assassino, Vida:7,800, Dano:2,600</span>
-</div>
-</div>
-</div>
-
-<div class="brawler hide mystic" id="gigi">
-<h3>BRAWLER-GIGI</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/gigi_perfil.png")}}">
-<div class="info">
-<span class="info-style">Classe: Assassino, Vida:8,200, Dano:1,200</span>
-</div>
-</div>
-</div> 
-
 <div class="brawler hide legendary" id="corvo">
 <h3>BRAWLER-CORVO</h3>
 <div class="conteudo">
@@ -158,15 +69,6 @@ Tema:
 </div>
 </div>
 
-<div class="brawler hide legendary" id="sandy">
-<h3>BRAWLER-SANDY</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/sandy_perfil.png")}}">
-<div class="info">
-<span class="info-style">Classe: Suporte, Vida:8,200 , Dano:1,800</span>
-</div>
-</div>
-</div>
 
 <div  class="brawler hide ultralegendary" id="sirius">
 <h3>BRAWLER-SIRIUS</h3>
@@ -185,6 +87,6 @@ Tema:
 <!--<script src="{{url_for("static",filename="javascript/infobrawler.js")}}></script>-->
 <script src="{{url_for("static",filename="javascript/onclick.js")}}"></script>
 <script src="{{url_for("static",filename="javascript/change_perfil.js")}}"></script>
-<script src="{{url_for("static",filename="javascript/busca_brawler.js")}}"></script>
+<!--<script src="{{url_for("static",filename="javascript/busca_brawler.js")}}"></script>-->
 </body>
 </html>
