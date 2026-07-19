@@ -29,20 +29,20 @@ Tema:
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
 <br>
-<button type="button" class="icon_b" value="primo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
-<button type="button" class="icon_b" value="poco" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="8bit" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/8bit_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="rico" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/rico_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="gale" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gale_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="mandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/mandy_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="clancy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/clancy_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="alli" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/alli_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="gigi" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gigi_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="corvo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/corvo_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="sandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sandy_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="sirius" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sirius_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="El Primo" onclick="showinfo(this.value)" onclick="buscar(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
+<button type="button" class="icon_b" value="Poco" onclick="showinfo(this.value)" onclick="buscar(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="8-BIT" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/8bit_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Rico" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/rico_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Gale" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gale_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Mandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/mandy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Clancy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/clancy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Alli" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/alli_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Gigi" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gigi_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Corvo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/corvo_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Sandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sandy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Sirius" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sirius_perfil.png")}}"></button>
 
-<div  class="brawler hide rare" id="primo">
+<div  class="brawler hide rare" id="El Primo">
 <h3>BRAWLER-EL PRIMO</h3>
 <div class="conteudo">
 <img class="perfil" src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}" alt="El Primo">
@@ -52,12 +52,17 @@ Tema:
 </div>
 </div> 
 
-<div class="brawler hide rare" id="poco">
-<h3>BRAWLER-POCO</h3>
+<div class="brawler hide rare" id="Poco">
+<h3>Brawler-<span id="brawl_nome"></span></h3>
 <div class="conteudo">
 <img class="perfil" src="{{url_for("static",filename="perfil/poco_perfil.png")}}">
 <div class="info">
-<span class="info-style">Classe: Suporte, Vida:8,000 , Dano:1,520</span>
+<span class="info-style">
+<span>Classe: <span id="classe"></span></span>
+<span>Vida: <span id="vida"></span></span>
+<span>Dano: <span id="dano"></span></span>
+</span>
+<div id=descricao></div>
 </div>
 </div>
 </div>
@@ -92,7 +97,7 @@ Tema:
 </div>
 </div>
 
-<div class="brawler hide epic" id="gale">
+<div class="brawler hide epic" id="Gale">
 <h3>BRAWLER-GALE</h3>
 <div class="conteudo">
 <img class="perfil" src="{{url_for("static",filename="perfil/gale_perfil.png")}}">
