@@ -34,7 +34,6 @@ function showinfo(id){
 }
 
 function buscar(nome){
-    console.log(nome);
     console.log(`http://127.0.0.1:5000/brawler/${nome}`);
     fetch(`http://127.0.0.1:5000/brawler/${nome}`, {method:"GET"})
     .then(brawldata => brawldata.json())
@@ -45,6 +44,9 @@ function buscar(nome){
         document.getElementById("vida").innerHTML = brawldata.vida;
         document.getElementById("dano").innerHTML = brawldata.dano;
         document.getElementById("descricao").innerHTML = brawldata.descricao;
+        document.getElementById("trio").innerHTML = brawldata.nome_trio;
+        document.getElementById("raridade").innerHTML = brawldata.nome_raridade;
+        document.getElementById("perfil").src = "static/"+brawldata.perfil_dir;
         }
     )
     

@@ -35,12 +35,12 @@
 }
 
 /*raridades*/
-.rare img{background-color: #0bd50b;}
-.superrare img{background-color:#0e0ed0;}
-.epic img{background-color:#b804b8;}
-.mystic img{background-color:#e31313;}
-.legendary img{background-color:#faff24;}
-.ultralegendary img{background-color:#800c56;}
+.raro img{background-color: #0bd50b;}
+.super-raro img{background-color:#0e0ed0;}
+.epico img{background-color:#b804b8;}
+.mitico img{background-color:#e31313;}
+.lendario img{background-color:#faff24;}
+.ultralendario img{background-color:#800c56;}
 
 
 .icon_b{

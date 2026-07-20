@@ -6,8 +6,9 @@ values("Andarilhos Místico"),("Artistas Mexicanos"),
 ("Terra dos Doces"),("Bazar das Bizarrices");
 values("Gangue de Retrópole"),("Ferro-velho"),
 ("Show de Acrobacias"),("Força Starr"),
-("Super Heróis"),("Fliperama");
+("Super Heróis"),("Fliperama"),(Profundezas);
 */
+
 select *  from trio;
 
 /*insert into raridade(nome_raridade)
@@ -39,12 +40,16 @@ values("Rico","Destruidor","6000","3000(600x5)","O quê?, Máquina de chiclete? 
 
 */
 
+
+/*
 insert into perfil(id_brawler,perfil_dir,ordem_perfil)
 values(1,"perfil/elprimo_perfil.png",1),(2,"perfil/sandy_perfil.png",1),
 (3,"perfil/gale_perfil.png",1),(4,"perfil/alli_perfil.png",1),
 (5,"perfil/mandy_perfil.png",1),(6,"perfil/gigi_perfil.png",1);
-
-
+*/
+insert into perfil(id_brawler,perfil_dir,ordem_perfil)
+values(7,"perfil/amber_perfil.png",1),(8,"perfil/poco_perfil.png",1),(9,"perfil/8bit_perfil.png",1),
+(10,"perfil/rico_perfil.png",1);
 
 
 insert into brawler(nome_brawler,classe,vida,dano,descricao,id_trio,id_raridade,ordem_raridade,dt_lancamento)

@@ -18,10 +18,14 @@ def conect():
     database=os.getenv("DB_NAME")
     )
 
+def ler_query():
+    with open("database/Query/brawlerinfo.sql","r",encoding="utf-8") as arquivo:
+        return arquivo.read()
+
 def busca_brawler(brawler):
     conexao = conect() 
     busca = conexao.cursor(dictionary = True)
-    query = "SELECT nome_brawler, classe, vida, dano, descricao FROM brawler WHERE nome_brawler = %s"
+    query = ler_query()
     busca.execute(query,(brawler,))
     resposta = busca.fetchone()
     #nome_brawler, classe, vida, dano, descricao = resposta

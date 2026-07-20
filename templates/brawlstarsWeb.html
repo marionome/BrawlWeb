@@ -46,40 +46,20 @@ Tema:
 <div class=" brawler hide rare" id="infobrawler">
 <h3>Brawler-<span id="brawl_nome"></span></h3>
 <div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/poco_perfil.png")}}">
+<img class="perfil" id="perfil" src="">
 <div class="info">
 <span class="info-style">
 <span>Classe: <span id="classe"></span></span>
 <span>Vida: <span id="vida"></span></span>
 <span>Dano: <span id="dano"></span></span>
+<span>Raridade: <span id="raridade"></span></span>
+<span>Trio: <span id="trio"></span></span>
 </span>
-<div id=descricao></div>
+<div id=descricao style="font-size: 150%; text-align: center;"></div>
 </div>
 </div>
 </div>
 
-<div class="brawler hide legendary" id="corvo">
-<h3>BRAWLER-CORVO</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/corvo_perfil.png")}}">
-<button class="change" type="button" value="corvo" onclick="change(this.value)"><img src="{{url_for("static",filename="decor_css/corvo_change.png")}}"></button>
-<div class="info">
-<span class="info-style">Classe: Assassino, Vida:6,000 , Dano:640x3(1920)</span>
-</div>
-</div>
-</div>
-
-
-<div  class="brawler hide ultralegendary" id="sirius">
-<h3>BRAWLER-SIRIUS</h3>
-<div class="conteudo">
-<img class="perfil" src="{{url_for("static",filename="perfil/sirius_perfil.png")}}" alt="Sirius">
-<button class="change" type="button" value="sirius" onclick="change(this.value)"><img src="{{url_for("static",filename="decor_css/sirius_change.png")}}"></button>
-<div class="info">
-<span class="info-style">Classe: Controle, Vida:7,400, Dano:1200x2(2,400)</span>
-</div>
-</div>
-</div>
 
 </div><!--icon_select-->
 </div><!--b_show-->
