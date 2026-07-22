@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}"> 
@@ -23,27 +24,32 @@ Tema:
 <h1>Brawlers</h1>
 <button type="button" id="botao" onclick="showhide()">Clique aqui para ver os brawlers</button>
 
-<button onclick="buscar()">
-    Teste Fetch
-</button>
+
 <div class="b_show ativo" id="b_show"><!--div que agrupa todos os brawlers-->
 <div class="icon_select" id="icon_select">
 <br>
+<button type="button" class="icon_b" value="Brock" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/brock_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Bull" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/bull_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="El Primo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/elprimo_perfil.png")}}"></button><!--botão para mostrar informação individual dos brawlers-->
 <button type="button" class="icon_b" value="Poco" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/poco_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Jessie" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/jessie_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="8-BIT" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/8bit_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Rico" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/rico_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Stu" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/stu_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Bibi" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/bibi_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Gale" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gale_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Mandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/mandy_perfil.png")}}"></button>
-<button type="button" class="icon_b" value="Clancy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/clancy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Tara" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/tara_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Eugênio" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/eugenio_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Alli" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/alli_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Gigi" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/gigi_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Corvo" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/corvo_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Sandy" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sandy_perfil.png")}}"></button>
+<button type="button" class="icon_b" value="Amber" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/amber_perfil.png")}}"></button>
 <button type="button" class="icon_b" value="Sirius" onclick="showinfo(this.value)"><img src="{{url_for("static",filename="perfil/sirius_perfil.png")}}"></button>
 
 
-<div class=" brawler hide rare" id="infobrawler">
+<div class=" brawler hide " id="infobrawler">
 <h3>Brawler-<span id="brawl_nome"></span></h3>
 <div class="conteudo">
 <img class="perfil" id="perfil" src="">
@@ -52,7 +58,7 @@ Tema:
 <span>Classe: <span id="classe"></span></span>
 <span>Vida: <span id="vida"></span></span>
 <span>Dano: <span id="dano"></span></span>
-<span>Raridade: <span id="raridade"></span></span>
+<span>Raridade: <span id="raridade" ></span></span>
 <span>Trio: <span id="trio"></span></span>
 </span>
 <div id=descricao style="font-size: 150%; text-align: center;"></div>

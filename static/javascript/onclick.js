@@ -13,7 +13,6 @@ function showinfo(id){
     brawlerAtual = null
     if(!visivel){
         painel.classList.remove("hide");
-        console.log(id)
         buscar(id);
 
         visivel = true;
@@ -46,8 +45,25 @@ function buscar(nome){
         document.getElementById("descricao").innerHTML = brawldata.descricao;
         document.getElementById("trio").innerHTML = brawldata.nome_trio;
         document.getElementById("raridade").innerHTML = brawldata.nome_raridade;
+        rari_class(brawldata.nome_raridade);
         document.getElementById("perfil").src = "static/"+brawldata.perfil_dir;
         }
     )
     
+}
+
+
+old_rari = null
+function rari_class(raridade){
+    raridade = raridade.toLowerCase()
+
+    if (old_rari != null){
+        infobrawler.classList.remove(old_rari)
+        infobrawler.classList.add(raridade)
+        old_rari = raridade
+    }
+    else{
+        old_rari = raridade
+        infobrawler.classList.add(raridade)
+    }
 }

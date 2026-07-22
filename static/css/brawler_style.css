@@ -16,6 +16,7 @@
 
 		color: #ffffff;
 		font-size: 30px;
+		text-align: center
 		
 	}
 
@@ -37,10 +38,10 @@
 /*raridades*/
 .raro img{background-color: #0bd50b;}
 .super-raro img{background-color:#0e0ed0;}
-.epico img{background-color:#b804b8;}
-.mitico img{background-color:#e31313;}
-.lendario img{background-color:#faff24;}
-.ultralendario img{background-color:#800c56;}
+.épico img{background-color:#b804b8;}
+.mítico img{background-color:#e31313;}
+.lendário img{background-color:#faff24;}
+.ultralendário img{background-color:#800c56;}
 
 
 .icon_b{
