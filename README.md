@@ -31,6 +31,7 @@ Este projeto foi desenvolvido principalmente para consolidar conhecimentos em de
     <img src="assets-readme/tema2.png" width="45%">
     <img src="assets-readme/tema3.png" width="45%">
 </p>
+
 ---
 
 ## ✨ Funcionalidades
