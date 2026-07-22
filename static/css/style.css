@@ -4,8 +4,20 @@
 	
 }
 
+main, body{
+	min-height: 100vh;
+	margin: 0;
+	
+}
+main{
+	flex:1;
+}
 
 body{
+	display: flex;
+	flex-direction: column;
+
+
 	font-family: Nougat;
 	font-variant:normal;
 	color: white;
@@ -18,6 +30,7 @@ body{
 				 1px 0px 0 #000,
 				 0px -1px 0 #000,
 				 0px 1px 0 #000;
+	
 }
 
 	
